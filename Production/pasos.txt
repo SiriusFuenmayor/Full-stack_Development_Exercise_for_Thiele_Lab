@@ -1,0 +1,31 @@
+- Situados en el directorio backend correr el comando para construir las imagenes de los contenedores:
+
+> docker-compose build
+
+- Luego correr el siguiente comando para correr los contenedores:
+
+> docker-compose up
+> docker-compose down
+
+docker build -t <IMAGE_NAME> <DIRECTORY_WHERE_THE_DOCKERFILE_IS_LOCATED>
+docker build -t nextjs-frontend .
+
+docker run -d -t <IMAGE_NAME> --name <CONTAINER_NAME>
+docker run -p 3000:3000 nextjs-frontend
+
+
+- Agregar lo siguiente al README
+
+    Nginx Reverse Proxy:
+
+    - We will create a Docker Image of Nginx to use as a Reverse Proxy, i.e. to forward user requests to a Python Application.
+
+    Python Flask Application:
+
+    - We will create a simple Python Flask Application providing 3 APIs. This application will store the count of visits or hits to the applications in Redis. For this, we will write a Dockerfile and create a Docker Image.
+
+    https://www.clickittech.com/devops/dockerize-flask-python-application/
+    https://www.youtube.com/watch?v=dVEjSmKFUVI
+
+
+Version Node.sj v20.5.0
