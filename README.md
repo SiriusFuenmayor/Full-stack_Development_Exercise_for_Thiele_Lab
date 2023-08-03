@@ -18,7 +18,7 @@ For this purpose for the production version of the application [uWSGI](https://u
 Deployment for production with Docker containers
 -------------------------------------------------
 
-To build and run docker containers for the Flask api, uWSGI and Nginx servers and the for the Next.js frontend move to the **Production** folder and then execute the following command to build the containers using Docker Compose:
+To build and run docker containers for the Flask api, uWSGI and Nginx servers and Next.js frontend move to the **Production** folder and then execute the following command to build the containers using Docker Compose:
 
 `docker-compose build`
 
